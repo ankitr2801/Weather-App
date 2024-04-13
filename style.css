@@ -1,0 +1,122 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+}
+
+body{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(27, 27, 73);
+}
+
+#container{
+      width: 400px;
+      height: min-content;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+}
+
+#searchBox{
+      width: 100%;
+      height: min-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+#searchBox input{
+      width: 85%;
+      font-size: 1rem;  
+      text-transform: capitalize;
+      background-color: rgb(231, 231, 238);
+      padding: 12px 15px;
+      border-radius: 10px;
+}
+#searchBox input::placeholder{
+      font-size: 1.2rem;
+}
+#searchBox button{
+      width: 40px;
+      height: 45px;
+      background-color: rgb(229, 229, 236);
+      font-size: 1.2rem;
+      border-radius: 50%;
+}
+/* #weather-container{
+      display: none;
+} */
+#weather-body{
+      display:none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-block: 20px;
+}
+#weather-body img{
+  width: 70%;
+}
+#weather-body .weather-temp{
+      font-size: 2.2rem;
+      font-size: 800;
+      margin-block: 15px;
+      position: relative;
+}
+#weather-body .weather-temp sup{
+      position: absolute;
+      font-size: 1.2rem;
+      font-weight: 600;
+}
+#weather-body .description{
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-block: 20px;
+}
+#Weather-details{
+      display: none;
+      justify-content:space-between;
+      align-items: center;
+}
+#Weather-details .humidity,.Wind{
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+}
+#Weather-details .Wind{
+margin-right: 20px;
+}
+#Weather-details i{
+      font-size: 1.5rem;
+      font-weight: 800;
+}
+.text span{
+      font-size: 1.3rem;
+      font-weight: 400;
+}
+/* #weather-container{
+      display: none;
+} */
+
+#location-not-found{
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+#location-not-found img{
+      width: 80%;
+      margin: 10px;
+}
+#location-not-found h1{
+      font-size: 1.5rem;
+      font-style: italic;
+      color: grey;
+      margin-top: 20px;
+}
